@@ -7,15 +7,15 @@ import cors from 'cors';
 
 //require('dotenv').config();
 const app = express();
-
+app.use(cors());
 app.use(express.json());
-app.use(cors(
+/*app.use(cors(
     {
         origin: 'http://localhost:5555',
         methods: ['POST','UPDATE','DELETE'],
         allowedHeaders : ['Content-type'],
     }
-));
+));*/
 app.use('/api', TaskRoutes);
 
 app.get('/', (request,response) => {
