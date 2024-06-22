@@ -10,8 +10,8 @@ const App = () => {
     <Routes>
       <Route path="/" element={<TaskList />} />
       <Route path="/tasks/:id" element={<TaskDetails />} />
-      <Route path="/create" element={<CreateTask />} />
-      <Route path="/edit/:id" element={<EditTask />} />
+      <Route path="/create-task" element={<CreateTask />} />
+      <Route path="/edit-task/:id" element={<EditTask />} />
     </Routes>
   );
 };
